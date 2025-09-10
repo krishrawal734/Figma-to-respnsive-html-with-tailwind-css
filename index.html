@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind_ui</title>
+    <!--tailwind link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--css- link-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--part-1 header and navbar-->
+    <div class="w-full h-screen bg-black">
+    <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg">
+        <div class="flex-1 flex items-center">
+            <img class="sm:w-[4rem] w-[4rem] z-10" src="https://i.fbcd.co/products/resized/resized-750-500/kr-rk-design-logos-2-61d09c33ddb5698b14abaa70d6710ada0fb010401bace11dff60bd7542875e47.jpg" alt="Logo"  />
+            <h1 class=" text-2xl text-white font-bold mx-3">INDEX.IO</h1>
+        </div>
+        <label for="menu-toggle" class="pointer-cursor md:hidden block">
+            
+            </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden md:flex md:items-center md:w-auto w-full z-10" id="menu">
+            <nav>
+                <ul class="md:flex items-center justify-between text-base xl:text-lg text-gray-100 pt-4 md:pt-0">
+                    <li><a class="md:p-4 py-3 px-0 block text-rose-500 hover:text-rose-500" href="#">Home</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-rose-500" href="#">About Me</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-rose-500" href="#">Education</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-rose-500" href="#">Experience</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-rose-500" href="#">Projects</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block hover:text-rose-500 md:mb-0 mb-2" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <!--  -->
+    <div class="lg:px-16 px-4 pb-4 h-full flex flex-col sm:flex-row sm:items-center mt-10 sm:mt-0 text-white">
+        <!-- col -1  -->
+        <div class="w-full flex flex-col z-10">
+            <h4 class="text-lg font-semibold text-white xl:text-2xl">Hey There</h4>
+            <h1 class="2xl:text-8xl md:text-6xl sm:text-4xl text-3xl font-semibold font-serif mt-2">I'm
+                <span class="">Krish</span>
+            </h1>
+            <h1 class="md:text-6xl sm:text-4xl text-3xl font-semibold font-serif">Rawal</h1>
+            <h4 class="text-rose-500 mt-4 lg:text-2xl xl:3xl">--FullStack Developer</h4>
+
+            <p class="lg:w-[70%] w-full text-white text-md mt-4 md:text-lg 2xl:text-2xl">Experienced full-stack developer with 4+
+                years
+                of expertise in Laravel, NestJS, Nuxt.js, Next.js, Android, and some Flutter experience.</p>
+
+            <div>
+                <button class="mt-6 px-6 py-1 bg-rose-500 text-lg text-white rounded-sm lg:text-2xl">Get In Touch</button>
+            </div>
+        </div>
+
+        <!-- col-2 -->
+        <div
+            class="w-full flex sm:flex-col justify-center mt-4 sm:mt-0 sm:gap-8 gap-2 bg-gray-700/60 sm:bg-transparent p-4 rounded-lg z-10">
+            <div class="flex flex-col sm:items-end items-center">
+                <div class="inline-flex gap-1 items-center">
+                    <h2 class="xl:text-8xl md:text-6xl sm:text-4xl text-3xl font-semibold">5</h2>
+                    <h2 class="text-rose-500 xl:text-6xl md:text-7xl sm:text-4xl text-3xl font-extrabold">+</h2>
+                </div>
+                <h4 class="text-sm sm:text-lg xl:text-2xl text-center">Years of Expireance</h4>
+            </div>
+            <div class="flex flex-col sm:items-end items-center">
+                <div class="inline-flex gap-1 items-center">
+                    <h2 class="xl:text-8xl md:text-6xl sm:text-4xl text-3xl font-semibold">55</h2>
+                    <h2 class="text-rose-500 xl:text-8xl md:text-6xl sm:text-4xl text-3xl font-extrabold">+</h2>
+                </div>
+                <h4 class="text-sm sm:text-lg xl:text-2xl text-center">Component Contribution</h4>
+            </div>
+            <div class="flex flex-col sm:items-end items-center">
+                <div class="inline-flex gap-1 items-center">
+                    <h2 class="xl:text-8xl md:text-6xl sm:text-4xl text-3xl font-semibold">127K</h2>
+                    <h2 class="text-rose-500 xl:text-8xl md:text-6xl sm:text-4xl text-3xl font-extrabold">+</h2>
+                </div>
+                <h4 class="text-sm sm:text-lg xl:text-2xl text-center">User's Got Help</h4>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--part-2 -->
+<section>
+ <div class="text-center p-10   ">
+        <h1 class="font-bold text-4xl mb-4"> OUR SUCCESS</h1>
+        <p class=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odio
+          nesciunt, eveniet nostrum <br> id consectetur quibusdam. Numquam vel odit
+          tenetur molestias accusamus earum autem tempora eveniet possimus
+          repellendus. Esse, necessitatibus.
+        </p>
+      </div>
+
+       
+    <div class="bg-white  ">
+
+      <dl
+        class="  grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-center sm:grid-cols-2 lg:max-w-none lg:grid-cols-4">
+        <div class="flex flex-col gap-y-2">
+          <dt class="text-base leading-7 text-gray-600">Happy users</dt>
+          <dd class="order-first text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">12k+</dd>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <dt class="text-base leading-7 text-gray-600">Satisfication</dt>
+          <dd class="order-first text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">98%</dd>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <dt class="text-base leading-7 text-gray-600">Components</dt>
+          <dd class="order-first text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">250+</dd>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <dt class="text-base leading-7 text-gray-600">Average rating</dt>
+          <dd class="order-first text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">4.9</dd>
+        </div>
+      </dl>
+    </div>
+    </div>
+  
+
+
+      </section>
+
+      <!--card- section-->
+      <section id="features" class="container mx-auto px-4 space-y-6 bg-slate-50 py-8 md:py-12 lg:py-20">
+
+    <div class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+
+        <h2 class="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">Features</h2>
+
+        <p class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+            The product can personalize user experiences by understanding individual preferences and tailoring
+            recommendations or content based on user behavior and historical data.
+        </p>
+
+    </div>
+
+    <div class="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
+
+        <div
+            class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <svg viewBox="0 0 24 24" class="h-12 w-12 fill-current">
+                    <path
+                        d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z">
+                    </path>
+                </svg>
+                <div class="space-y-2">
+                    <h3 class="font-bold">Next.js 13</h3>
+                    <p class="text-sm text-muted-foreground">App dir, Routing, Layouts, Loading UI and API routes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <svg viewBox="0 0 24 24" class="h-12 w-12 fill-current">
+                    <path
+                        d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.167 2.167 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44a23.476 23.476 0 0 0-3.107-.534A23.892 23.892 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442a22.73 22.73 0 0 0-3.113.538 15.02 15.02 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87a25.64 25.64 0 0 1-4.412.005 26.64 26.64 0 0 1-1.183-1.86c-.372-.64-.71-1.29-1.018-1.946a25.17 25.17 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25.245 25.245 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933a25.952 25.952 0 0 0-1.345-2.32zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493a23.966 23.966 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23.142 23.142 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39a25.819 25.819 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143a22.005 22.005 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295a1.185 1.185 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z">
+                    </path>
+                </svg>
+                <div class="space-y-2">
+                    <h3 class="font-bold">React 18</h3>
+                    <p class="text-sm">Server and Client Components. Use hook.</p>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <svg viewBox="0 0 24 24" class="h-12 w-12 fill-current">
+                    <path
+                        d="M0 12C0 5.373 5.373 0 12 0c4.873 0 9.067 2.904 10.947 7.077l-15.87 15.87a11.981 11.981 0 0 1-1.935-1.099L14.99 12H12l-8.485 8.485A11.962 11.962 0 0 1 0 12Zm12.004 12L24 12.004C23.998 18.628 18.628 23.998 12.004 24Z">
+                    </path>
+                </svg>
+                <div class="space-y-2">
+                    <h3 class="font-bold">Database</h3>
+                    <p class="text-sm text-muted-foreground">ORM using Prisma and deployed on PlanetScale.</p>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <svg viewBox="0 0 24 24" class="h-12 w-12 fill-current">
+                    <path
+                        d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z">
+                    </path>
+                </svg>
+                <div class="space-y-2">
+                    <h3 class="font-bold">Components</h3>
+                    <p class="text-sm text-muted-foreground">UI components built using Radix UI and styled with Tailwind
+                        CSS.</p>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                    class="h-12 w-12 fill-current">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <div class="space-y-2">
+                    <h3 class="font-bold">Authentication</h3>
+                    <p class="text-sm text-muted-foreground">Authentication using NextAuth.js and middlewares.</p>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="relative overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <svg viewBox="0 0 24 24" class="h-12 w-12 fill-current">
+                    <path
+                        d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z">
+                    </path>
+                </svg>
+                <div class="space-y-2">
+                    <h3 class="font-bold">Subscriptions</h3>
+                    <p class="text-sm text-muted-foreground">Free and paid subscriptions using Stripe.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- About Us Section -->
+<section class="container mx-auto">
+ 
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center md:space-x-12">
+      <!-- Image -->
+      <div class="w-full md:w-1/2 mb-8 md:mb-0">
+        <img
+          src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
+          class="rounded-lg" />
+      </div>
+
+      <!-- Text Content -->
+      <div class="w-full md:w-1/2">
+        <h2 class="text-4xl font-bold mb-4 inline-block">Design,Build,Ship</h2>
+        <p class="mb-4  leading-relaxed">
+          We are committed to delivering innovative solutions with a focus on quality and customer satisfaction. Our
+          team of experts works tirelessly to bring your ideas to life and help your business grow.
+        </p>
+        <p class="mb-4  leading-relaxed">
+          Join us on our journey to make a difference in the industry through creativity, dedication, and excellence.
+        </p>
+        <a href="#contact"
+          class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+          Contact Us
+        </a>
+      </div>
+    </div>
+</section>
+
+
+<section class="container mx-auto">
+    <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div class="max-w-lg">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">About Us</h2>
+                <p class="mt-4 text-gray-600 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+                    eros at lacus feugiat hendrerit sed ut tortor. Suspendisse et magna quis elit efficitur consequat.
+                    Mauris eleifend velit a pretium iaculis. Donec sagittis velit et magna euismod, vel aliquet nulla
+                    malesuada. Nunc pharetra massa lectus, a fermentum arcu volutpat vel.</p>
+                <div class="mt-8">
+                    <a href="#" class="text-blue-500 hover:text-blue-600 font-medium">Learn more about us
+                        <span class="ml-2">&#8594;</span></a>
+                </div>
+            </div>
+            <div class="mt-12 md:mt-0">
+                <img src="https://plus.unsplash.com/premium_photo-1678565879444-f87c8bd9f241?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdlYiUyMGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D" alt="About Us Image" class="object-cover rounded-lg shadow-md">
+            </div>
+        </div>
+    </div>
+</section>
+<!--part4-->
+
+<div class="relative overflow-hidden bg-gray-50 container mx-auto">
+    <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+      <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+        <div class="sm:max-w-lg">
+          <h1 class="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Svelte signals are finally here</h1>
+          <p class="mt-4 text-xl text-gray-500">This year, our new svelte signals will shelter you from the harsh
+             elements of a world that doesn't care if you develop or die.</p>
+        </div>
+        <div>
+          <div class="mt-10">
+            <!-- Decorative image grid -->
+            <div aria-hidden="true" class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+              <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                <div class="flex items-center space-x-6 lg:space-x-8">
+                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                      <img src="data:image/jpeg;base64,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" class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="https://placekeanu.com/200/300" alt="" class="h-full w-full object-cover object-center">
+                    </div>
+                  </div>
+                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="https://placekeanu.com/684/350/" alt="" class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="https://placekeanu.com/250/350/y" alt="" class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGziv-4nGxhW2Ymqwb2lQr9o3zj-XfC7lCgSbeWkLQ4hRSYKqqn5nqdGjBRS1xpxHsFaA&usqp=CAU" alt="" class="h-full w-full object-cover object-center">
+                    </div>
+                  </div>
+                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="https://placekeanu.com/684/350/y" alt="" class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img src="https://placebear.com/684/350" alt="" class="h-full w-full object-cover object-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="inline-block rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-center font-medium text-white hover:bg-indigo-700">Svelte Signals</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--part5-->
+<section class="pt-15 overflow-hidden  dark:bg-gray-800 md:pt-0 container mx-auto mt-20">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="grid items-center grid-cols-1 md:grid-cols-2">
+
+            <div>
+                <h2 class="text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl">Hey 👋 I
+                    am
+                    <br class="block sm:hidden" />krish 
+                 rawal
+                </h2>
+                <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 dark:text-gray-300 md:mt-8">
+                    Amet minim mollit non deserunt
+                    ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    Exercitation veniam consequat sunt nostrud amet.
+                </p>
+
+                <p class="mt-4 text-xl text-gray-600 dark:text-gray-300 md:mt-8">
+                    <span class="relative inline-block">
+                        <span class="absolute inline-block w-full bottom-0.5 h-2 bg-yellow-300 dark:bg-gray-900"></span>
+                    <span class="relative"> Have a question? </span>
+                    </span>
+                    <br class="block sm:hidden" />Ask me on <a href="#" title=""
+                        class="transition-all duration-200 text-sky-500 dark:text-sky-400 hover:text-sky-600 dark:hover:text-sky-500 hover:underline">Twitter</a>
+                </p>
+            </div>
+
+            <div class="relative">
+                <img class="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
+
+                <img class="relative  xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-50" src="data:image/jpeg;base64,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" alt="" />
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
